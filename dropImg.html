@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Image</title>
+    <style>
+        .dropdown{
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+
+        }
+        .dropdown_content{
+            display:none;
+            position: relative;
+            left: 35px;
+            
+            
+            box-sizing: border-box;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown_content{
+            display: block;
+        }
+        .desc{
+            padding: 8px;
+            text-align: center;
+            font-size: large;
+            text-shadow: 2px 0px 1px red;
+            background-color: #4444e6;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <span><img src="/images/one.jpg" width="80px" height="70px"></span>
+        <div class="dropdown_content">
+        <img src="/images/one.jpg">
+        <div class="desc">Awesome Designing</div>
+        </div>
+    </div>
+</body>
+</html>

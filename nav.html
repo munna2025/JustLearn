@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .header, footer{
+            background-color: gray;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        .coloumn{
+            float: left;
+            padding: 15px;
+        }
+        .clearfix::after{
+            content: " ";
+            clear: both;
+            display: table;
+        }
+        .menu{
+            width: 25%;
+        }
+        .content{
+            width: 75%;
+        }
+        .menu ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .menu li{
+            padding: 8px;
+            margin-bottom: 8px;
+            background-color: #335be5;
+        }
+        .menu li:hover{
+            background-color: #0099cc;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Hi! I'm header
+    </div>
+    <div class="clearfix">
+        <div class="coloumn menu">
+        <ul>
+            <li> India</li>
+            <li> India</li>
+            <li> India</li>
+        </ul>
+        </div>
+        <div class="column content">
+            <h1>The City</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum cumque voluptate, impedit ad alias consequatur vel eveniet eaque quas maxime veniam a in nam eligendi? Harum odio in non architecto perferendis dolorum, asperiores, eveniet eaque doloribus alias recusandae soluta veritatis possimus! Minus quod amet quia iste ut, voluptatum sint blanditiis.</p>
+        </div>
+    </div>
+    <footer>
+        <p>footer</p>
+    </footer>
+</body>
+</html>

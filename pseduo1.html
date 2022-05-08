@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin: 55px;
+            background-color: aqua;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 8px;
+            box-shadow: 2px 4px 8px 5px rgba(0,0,0,0.2);
+        }
+            p{
+                display:none ;
+                position: relative;
+                background-color: yellow;
+                padding: 15px;
+                font-size: 20px;
+                
+            }
+            p a{
+                padding: 8px;
+                text-decoration: none;
+            }
+            p a:hover{
+                text-decoration: dashed;
+                color: #093d50;
+                /* border: 2px solid red; */
+            }
+            div:hover p{
+                display: block;
+            }
+    </style>
+</head>
+<body>
+    <div>Hi! Click me & show magic!
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p> <a href="/table.html" target="abhi">Link1</a>
+            <a href="">Link2</a>
+            <a href="@">Link3</a>
+            <a href="@">Link4</a>
+        </p>
+        <iframe src="" frameborder="0" name="abhi" width="100%" height="100%"></iframe>
+    </div>
+</body>
+</html>
